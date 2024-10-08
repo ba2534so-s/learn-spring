@@ -86,3 +86,7 @@ local.properties
 **/.classpath
 **/.project
 **/MANIFEST.MF
+**/mvnw
+**/mvnw.cmd
+**/maven-wrapper.properties
+**/.gitignore
