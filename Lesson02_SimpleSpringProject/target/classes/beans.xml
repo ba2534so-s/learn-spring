@@ -8,16 +8,16 @@
     <!-- Define your beans here -->
     	<bean id="singletonDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer">
     		<property name="age" value="10"></property>
-    		<property name="computer" ref="Laptop"></property>
+    		<property name="computer" ref="laptop"></property>
     	</bean>
     	<bean id="prototypeDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer" scope="prototype">
     	
     	</bean>
-    	<bean id="Laptop" class="com.learn.spring.Lesson02_SimpleSpringProject.Laptop">
+    	<bean id="laptop" class="com.learn.spring.Lesson02_SimpleSpringProject.Laptop">
     		<constructor-arg value="500"></constructor-arg>
     	
     	</bean>
-    	<bean id="Desktop" class="com.learn.spring.Lesson02_SimpleSpringProject.Desktop">
+    	<bean id="desktop" class="com.learn.spring.Lesson02_SimpleSpringProject.Desktop">
     		<constructor-arg value="1000"></constructor-arg>
     	</bean>
     	
