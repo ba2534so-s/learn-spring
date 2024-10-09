@@ -12,7 +12,7 @@ public class Lesson01FirstSpringBootProjectApplication {
 		
 		Developer obj = context.getBean(Developer.class);
 		
-		
+		obj.code();
 	}
 
 }
