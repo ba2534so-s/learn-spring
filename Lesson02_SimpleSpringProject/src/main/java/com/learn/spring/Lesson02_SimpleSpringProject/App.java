@@ -32,6 +32,7 @@ public class App
         // Prototype scope: Spring container will create new objects every time getBean is called
         Developer obj3 = (Developer) context.getBean("prototypeDeveloper");
         obj3.setAge(22);
+        System.out.println("Dev 3 age: " + obj3.getAge());
         
         
     }
