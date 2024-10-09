@@ -20,7 +20,9 @@ public class App
         Developer obj1 = (Developer) context.getBean("developer");
         obj1.age = 18;
         obj1.code();
+        System.out.println("Age: " + obj1.age);
         
         Developer obj2 = (Developer) context.getBean("developer");
+        
     }
 }
