@@ -9,5 +9,10 @@
     	<bean id="singletonDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer">
     		<property name="age" value="10"></property>
     	</bean>
-    	<bean id="prototypeDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer" scope="prototype"></bean>
+    	<bean id="prototypeDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer" scope="prototype">
+    	
+    	</bean>
+    	<bean id="Laptop" class="com.learn.spring.Lesson02_SimpleSpringProject.Laptop">
+    	
+    	</bean>
 </beans>
