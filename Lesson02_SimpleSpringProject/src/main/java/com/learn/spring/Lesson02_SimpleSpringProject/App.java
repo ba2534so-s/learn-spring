@@ -22,6 +22,11 @@ public class App
         obj1.code();
         System.out.println("Dev 1 age: " + obj1.age);
         
+        
+        // By default beans have Singleton Scope.
+        // Singleton scope: Both obj1 and obj2 arr referring to the same object provided by the Spring Container
+        // Scope can also be changed to Prototype Scope (manually)
+        // Prototype scope: Spring container will create new objects every time getBean is called
         Developer obj2 = (Developer) context.getBean("developer");
         System.out.println("Dev 2 age: " + obj2.age);
         
