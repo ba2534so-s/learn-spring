@@ -12,7 +12,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	BeanFactory factory = new XmlBeanFactory(new FileSystemResource("beans.xml"));
+    	//BeanFactory factory = new XmlBeanFactory(new FileSystemResource("beans.xml"));
     	
         Developer obj = (Developer) factory.getBean("developer");
         obj.code();
