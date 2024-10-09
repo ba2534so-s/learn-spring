@@ -2,12 +2,24 @@ package com.learn.spring.Lesson02_SimpleSpringProject;
 
 public class Developer {
 	
-	int age;
+	private int age;
 	
 	public Developer() {
 		System.out.println("Creating Developer Object...");
 	}
 	
+	
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+
 	public void code() {
 		System.out.println("I am coding...");
 	}
