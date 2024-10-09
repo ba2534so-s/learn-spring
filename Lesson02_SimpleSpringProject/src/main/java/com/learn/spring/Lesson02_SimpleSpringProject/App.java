@@ -23,6 +23,7 @@ public class App
     	Developer obj1 = (Developer) context.getBean("singletonDeveloper");
     	
     	System.out.println("Initial age before assignment: " + obj1.getAge());
+    	System.out.println("Laptop memory: " + obj1.getLaptop().getMemory());
     	
     	obj1.setAge(18);
         obj1.code();
@@ -31,6 +32,7 @@ public class App
         Developer obj2 = (Developer) context.getBean("singletonDeveloper");
         System.out.println("Dev 2 age: " + obj2.getAge());
         System.out.println();
+
         
         // Scope can also be changed to Prototype Scope (manually)
         // Prototype scope: Spring container will create new objects every time getBean is called
