@@ -13,7 +13,7 @@
     	<bean id="prototypeDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer" scope="prototype" autowire="byName">
     	
     	</bean>
-    	<bean id="laptop" class="com.learn.spring.Lesson02_SimpleSpringProject.Laptop">
+    	<bean id="laptop" class="com.learn.spring.Lesson02_SimpleSpringProject.Laptop" primary="true">
     		<constructor-arg value="500"></constructor-arg>
     	
     	</bean>
