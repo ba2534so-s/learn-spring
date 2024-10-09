@@ -5,6 +5,7 @@ public class Desktop implements Computer {
 	private int memory;
 
 	public Desktop(int memory) {
+		System.out.println("Creating desktop...");
 		this.memory = memory;
 	}
 
