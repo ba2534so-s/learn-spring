@@ -2,6 +2,8 @@ package com.learn.spring.Lesson02_SimpleSpringProject;
 
 public class Developer {
 	
+	int age;
+	
 	public Developer() {
 		System.out.println("Creating Developer Object...");
 	}
