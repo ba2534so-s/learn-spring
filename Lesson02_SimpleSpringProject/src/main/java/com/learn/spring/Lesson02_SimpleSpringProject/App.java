@@ -21,7 +21,10 @@ public class App
         // Singleton scope: Both obj1 and obj2 arr referring to the same object provided by the Spring Container
     	System.out.println("SINGLETON");
     	Developer obj1 = (Developer) context.getBean("singletonDeveloper");
-        obj1.setAge(18);
+    	
+    	System.out.println("Initial age before assignment: " + obj1.getAge());
+    	
+    	obj1.setAge(18);
         obj1.code();
         System.out.println("Dev 1 age: " + obj1.getAge());
         
@@ -39,6 +42,9 @@ public class App
         Developer obj4 = (Developer) context.getBean("prototypeDeveloper");
         System.out.println("Dev 4 age: " + obj4.getAge());
         System.out.println();
+        
+        
+        
         
     }
 }
