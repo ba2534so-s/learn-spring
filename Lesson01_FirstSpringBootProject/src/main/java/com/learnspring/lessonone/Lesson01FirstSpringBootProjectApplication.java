@@ -10,7 +10,7 @@ public class Lesson01FirstSpringBootProjectApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(Lesson01FirstSpringBootProjectApplication.class, args);
 		
-		Developer obj;
+		Developer obj = context.getBean(Developer.class);
 		
 		
 	}
