@@ -3,7 +3,7 @@ package com.learn.spring.Lesson02_SimpleSpringProject;
 public class Developer {
 	
 	private int age;
-	private Laptop laptop;
+	private Computer computer;
 	
 	public Developer() {
 		System.out.println("Creating Developer Object...");
@@ -18,17 +18,17 @@ public class Developer {
 		this.age = age;
 	}
 
-	public Laptop getLaptop() {
-		return laptop;
+	public Computer getcomputer() {
+		return computer;
 	}
 
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+	public void setComputer(Computer computer) {
+		this.computer = computer;
 	}
 
 	public void code() {
 		System.out.println("I am coding...");
-		laptop.compile();
+		computer.compile();
 	}
 
 }
