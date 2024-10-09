@@ -11,6 +11,13 @@ public class Laptop {
 	
 	
 	
+	public Laptop(int memory) {
+		this.memory = memory;
+	}
+
+
+
+
 	public void compile() {
 		System.out.println("Compiling code...");
 	}
