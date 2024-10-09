@@ -3,6 +3,7 @@ package com.learn.spring.Lesson02_SimpleSpringProject;
 public class Developer {
 	
 	private int age;
+	private Laptop laptop;
 	
 	public Developer() {
 		System.out.println("Creating Developer Object...");
