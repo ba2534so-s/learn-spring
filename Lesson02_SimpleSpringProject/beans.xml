@@ -6,4 +6,5 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define your beans here -->
+    	<bean id="developer" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer"></bean>
 </beans>
