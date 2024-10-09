@@ -1,6 +1,6 @@
 package com.learn.spring.Lesson02_SimpleSpringProject;
 
-public class Laptop {
+public class Laptop implements Computer {
 	
 	private int memory;
 	
