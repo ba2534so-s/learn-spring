@@ -18,7 +18,7 @@ public class Developer {
 		this.age = age;
 	}
 
-	public Computer getcomputer() {
+	public Computer getComputer() {
 		return computer;
 	}
 
