@@ -11,6 +11,7 @@ public class Laptop {
 	*/
 	
 	public Laptop(int memory) {
+		System.out.println("Creating laptop...");
 		this.memory = memory;
 	}
 
