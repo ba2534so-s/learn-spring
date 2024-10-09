@@ -35,6 +35,7 @@ public class App
         System.out.println("Dev 3 age: " + obj3.getAge());
         
         Developer obj4 = (Developer) context.getBean("protoypeDeveloper");
+        System.out.println("Dev 4 age: " + obj4.getAge());
         
         
     }
