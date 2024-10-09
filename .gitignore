@@ -91,3 +91,4 @@ local.properties
 **/mvnw.cmd
 **/pom.properties
 **/maven-wrapper.properties
+**/target/
