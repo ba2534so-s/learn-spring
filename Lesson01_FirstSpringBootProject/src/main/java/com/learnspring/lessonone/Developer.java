@@ -9,6 +9,7 @@ public class Developer {
 	
 	public void code() {
 		System.out.println("I am coding...");
+		lap.compile();
 	}
 
 }
