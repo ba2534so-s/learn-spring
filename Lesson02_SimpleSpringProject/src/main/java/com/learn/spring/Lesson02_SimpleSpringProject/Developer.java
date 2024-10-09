@@ -3,7 +3,7 @@ package com.learn.spring.Lesson02_SimpleSpringProject;
 public class Developer {
 	
 	public Developer() {
-		
+		System.out.println("Creating Developer Object...");
 	}
 	
 	public void code() {
