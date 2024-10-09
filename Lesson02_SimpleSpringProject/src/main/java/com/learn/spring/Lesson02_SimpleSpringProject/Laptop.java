@@ -23,9 +23,6 @@ public class Laptop implements Computer {
 		this.memory = memory;
 	}
 
-
-
-
 	public void compile() {
 		System.out.println("Compiling code...");
 	}

@@ -16,6 +16,9 @@ public class Desktop implements Computer {
 		this.memory = memory;
 	}
 	
+	public void compile() {
+		System.out.println("Compiling code...");
+	}
 
 	
 }
