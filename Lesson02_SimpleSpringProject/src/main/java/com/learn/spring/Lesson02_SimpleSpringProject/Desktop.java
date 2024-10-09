@@ -17,7 +17,7 @@ public class Desktop implements Computer {
 	}
 	
 	public void compile() {
-		System.out.println("Compiling code...");
+		System.out.println("Compiling code in desktop...");
 	}
 
 	
