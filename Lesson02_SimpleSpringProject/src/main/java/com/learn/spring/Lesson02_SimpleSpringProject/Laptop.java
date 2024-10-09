@@ -4,7 +4,7 @@ public class Laptop {
 	
 	
 	public Laptop() {
-		
+		System.out.println("Creating laptop...");
 	}
 	
 	public void compile() {
