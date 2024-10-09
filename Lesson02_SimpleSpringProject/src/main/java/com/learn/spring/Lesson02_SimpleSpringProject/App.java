@@ -14,6 +14,6 @@ public class App
     {
     	BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
     	
-        System.out.println( "Hello World!" );
+        Developer obj = (Developer) factory.getBean("developer");
     }
 }
