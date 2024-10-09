@@ -17,7 +17,7 @@ public class App
     	//BeanFactory factory = new XmlBeanFactory(new FileSystemResource("beans.xml"));
     	ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
     	
-        Developer obj = (Developer) factory.getBean("developer");
+        Developer obj = (Developer) context.getBean("developer");
         obj.code();
     }
 }
