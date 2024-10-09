@@ -8,5 +8,14 @@ public class Desktop implements Computer {
 		this.memory = memory;
 	}
 
+	public int getMemory() {
+		return memory;
+	}
+
+	public void setMemory(int memory) {
+		this.memory = memory;
+	}
+	
+
 	
 }
