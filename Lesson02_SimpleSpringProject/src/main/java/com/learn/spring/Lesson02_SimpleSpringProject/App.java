@@ -40,6 +40,7 @@ public class App
         Developer obj3 = (Developer) context.getBean("prototypeDeveloper");
         obj3.setAge(22);
         System.out.println("Dev 3 age: " + obj3.getAge());
+        System.out.println("Dev 3 has a " + obj3.getComputer().getMemory());
         
         Developer obj4 = (Developer) context.getBean("prototypeDeveloper");
         System.out.println("Dev 4 age: " + obj4.getAge());

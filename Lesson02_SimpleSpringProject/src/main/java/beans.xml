@@ -17,7 +17,7 @@
     		<constructor-arg value="500"></constructor-arg>
     	
     	</bean>
-    	<bean id="desktop" class="com.learn.spring.Lesson02_SimpleSpringProject.Desktop">
+    	<bean id="computer" class="com.learn.spring.Lesson02_SimpleSpringProject.Desktop">
     		<constructor-arg value="1000"></constructor-arg>
     	</bean>
     	
