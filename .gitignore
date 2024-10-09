@@ -83,10 +83,12 @@ local.properties
 # Typically, this file would be tracked if it contains build/dependency configurations:
 #.project
 
+**/.gitignore
 **/.classpath
 **/.project
 **/MANIFEST.MF
 **/mvnw
 **/mvnw.cmd
+**/pom.properties
 **/maven-wrapper.properties
-**/.gitignore
+**/target/
