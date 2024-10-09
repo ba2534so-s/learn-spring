@@ -4,4 +4,9 @@ public class Desktop implements Computer {
 	
 	private int memory;
 
+	public Desktop(int memory) {
+		this.memory = memory;
+	}
+
+	
 }
