@@ -8,13 +8,12 @@ public class Developer {
 		System.out.println("Creating Developer Object...");
 	}
 	
-	
-	
 	public int getAge() {
 		return age;
 	}
 
 	public void setAge(int age) {
+		System.out.println("Setting age to " + age);
 		this.age = age;
 	}
 
