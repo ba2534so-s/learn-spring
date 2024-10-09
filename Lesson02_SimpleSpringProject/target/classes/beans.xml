@@ -6,6 +6,8 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define your beans here -->
-    	<bean id="singletonDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer"></bean>
+    	<bean id="singletonDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer">
+    		<property name="age" value="10"></property>
+    	</bean>
     	<bean id="prototypeDeveloper" class="com.learn.spring.Lesson02_SimpleSpringProject.Developer" scope="prototype"></bean>
 </beans>
