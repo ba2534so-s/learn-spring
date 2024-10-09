@@ -23,7 +23,7 @@ public class App
     	Developer obj1 = (Developer) context.getBean("singletonDeveloper");
     	
     	System.out.println("Initial age before assignment: " + obj1.getAge());
-    	System.out.println("Laptop memory: " + obj1.getLaptop().getMemory());
+    	System.out.println("Laptop memory: " + obj1.getComputer().getMemory());
     	
     	obj1.setAge(18);
         obj1.code();
