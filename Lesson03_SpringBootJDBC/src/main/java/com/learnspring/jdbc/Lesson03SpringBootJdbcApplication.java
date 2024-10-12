@@ -19,6 +19,8 @@ public class Lesson03SpringBootJdbcApplication {
 		dev1.setTech("Java");
 		
 		DeveloperRepo repo = context.getBean(DeveloperRepo.class);
+		
+		repo.save(dev1);
 	}
 
 }
