@@ -1,4 +1,4 @@
-package com.learnspring.jdbc;
+package com.learnspring.jdbc.repo;
 
 import com.learnspring.jdbc.model.Developer;
 
