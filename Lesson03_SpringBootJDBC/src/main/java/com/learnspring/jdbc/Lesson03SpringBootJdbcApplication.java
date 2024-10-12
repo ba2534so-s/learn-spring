@@ -21,6 +21,7 @@ public class Lesson03SpringBootJdbcApplication {
 		DeveloperRepo repo = context.getBean(DeveloperRepo.class);
 		
 		repo.save(dev1);
+		System.out.println(repo.getAll());
 	}
 
 }
