@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.learnspring.jdbc.model.Developer;
+import com.learnspring.jdbc.repo.DeveloperRepo;
 
 @SpringBootApplication
 public class Lesson03SpringBootJdbcApplication {
@@ -16,6 +17,8 @@ public class Lesson03SpringBootJdbcApplication {
 		dev1.setId(101);
 		dev1.setName("Mary Jane Johnson");
 		dev1.setTech("Java");
+		
+		DeveloperRepo repo = context.getBean(DeveloperRepo.class);
 	}
 
 }
