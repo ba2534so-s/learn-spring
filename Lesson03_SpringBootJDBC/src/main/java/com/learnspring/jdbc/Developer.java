@@ -26,6 +26,11 @@ public class Developer {
 		this.tech = tech;
 	}
 	
+	@Override
+	public String toString() {
+		return "Developer [id=" + id + ", name=" + name + ", tech=" + tech + "]";
+	}
+	
 	
 	
 }
