@@ -3,6 +3,7 @@ package com.learnspring.jdbc.repo;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -19,6 +20,7 @@ public class DeveloperRepo {
 		return template;
 	}
 
+	@Autowired
 	public void setTemplate(JdbcTemplate template) {
 		this.template = template;
 	}
