@@ -1,4 +1,4 @@
-package com.learnspring.jdbc;
+package com.learnspring.jdbc.model;
 
 public class Developer {
 	
