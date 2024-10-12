@@ -14,6 +14,15 @@ public class DeveloperRepo {
 	
 	private JdbcTemplate template;
 	
+	
+	public JdbcTemplate getTemplate() {
+		return template;
+	}
+
+	public void setTemplate(JdbcTemplate template) {
+		this.template = template;
+	}
+
 	public void save(Developer developer) {
 		
 	}
