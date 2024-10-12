@@ -14,6 +14,7 @@ public class Lesson03SpringBootJdbcApplication {
 		
 		Developer dev1 = context.getBean(Developer.class);
 		dev1.setId(101);
+		dev1.setName("Mary Jane Johnson");
 	}
 
 }
