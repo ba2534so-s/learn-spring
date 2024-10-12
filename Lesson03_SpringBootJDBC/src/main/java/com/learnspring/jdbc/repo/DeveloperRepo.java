@@ -27,6 +27,8 @@ public class DeveloperRepo {
 
 	public void save(Developer developer) {
 		
+		String query = "INSERT INTO developers (id, name, tech) VALUES (?, ?. ?)";
+		
 	}
 	
 	public List<Developer> getAll() {
