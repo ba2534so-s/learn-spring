@@ -1,5 +1,8 @@
 package com.learnspring.jdbc.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Developer {
 	
 	private int id;
