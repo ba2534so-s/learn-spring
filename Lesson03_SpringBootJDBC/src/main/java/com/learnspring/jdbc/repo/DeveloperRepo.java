@@ -29,6 +29,7 @@ public class DeveloperRepo {
 		
 		String query = "INSERT INTO developers (developer_id, name, tech) VALUES (?, ?. ?)";
 		int rows = template.update(query, developer.getId(), developer.getName(), developer.getTech());
+		System.out.println(rows + " row/s affected");
 		
 	}
 	
