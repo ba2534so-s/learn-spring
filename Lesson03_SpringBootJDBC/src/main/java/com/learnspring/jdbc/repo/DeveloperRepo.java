@@ -44,6 +44,7 @@ public class DeveloperRepo {
 			@Override
 			public Developer mapRow(ResultSet rs, int rowNum) throws SQLException {
 				Developer dev  = new Developer();
+				dev.setId(rs.getInt(1));
 				
 				
 				
