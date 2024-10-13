@@ -46,6 +46,7 @@ public class DeveloperRepo {
 				Developer dev  = new Developer();
 				dev.setId(rs.getInt(1));
 				dev.setName(rs.getString(2));
+				dev.setTech(rs.getString(3));
 				
 				
 				
