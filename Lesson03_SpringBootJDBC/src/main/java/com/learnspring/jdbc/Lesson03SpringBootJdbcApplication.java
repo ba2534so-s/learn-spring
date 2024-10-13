@@ -14,7 +14,7 @@ public class Lesson03SpringBootJdbcApplication {
 		ApplicationContext context = SpringApplication.run(Lesson03SpringBootJdbcApplication.class, args);
 		
 		Developer dev1 = context.getBean(Developer.class);
-		dev1.setId(101);
+		dev1.setId(104);
 		dev1.setName("Mary Jane Johnson");
 		dev1.setTech("Java");
 		
