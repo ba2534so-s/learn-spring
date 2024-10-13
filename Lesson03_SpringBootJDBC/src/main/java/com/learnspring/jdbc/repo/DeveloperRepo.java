@@ -48,12 +48,12 @@ public class DeveloperRepo {
 				dev.setName(rs.getString(2));
 				dev.setTech(rs.getString(3));
 				
-				
-				
 				return dev;
 			}
 			
 		};
+		
+		List<Developer> developers = template.query(query, mapper);
 		
 		return new ArrayList<>();
 	}
