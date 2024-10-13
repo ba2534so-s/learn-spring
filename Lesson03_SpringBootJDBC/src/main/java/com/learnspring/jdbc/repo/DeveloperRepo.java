@@ -45,6 +45,7 @@ public class DeveloperRepo {
 			public Developer mapRow(ResultSet rs, int rowNum) throws SQLException {
 				Developer dev  = new Developer();
 				dev.setId(rs.getInt(1));
+				dev.setName(rs.getString(2));
 				
 				
 				
