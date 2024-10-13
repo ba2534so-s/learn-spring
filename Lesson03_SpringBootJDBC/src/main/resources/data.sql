@@ -1,0 +1,1 @@
+INSERT INTO developers (developer_id, name, tech) VALUES (101, 'John Smith', 'Blockchain')
