@@ -34,6 +34,8 @@ public class DeveloperRepo {
 	}
 	
 	public List<Developer> getAll() {
+		String query = "SELECT * FROM developers";
+		
 		return new ArrayList<>();
 	}
 
