@@ -55,7 +55,7 @@ public class DeveloperRepo {
 		
 		List<Developer> developers = template.query(query, mapper);
 		
-		return new ArrayList<>();
+		return developers;
 	}
 
 }
