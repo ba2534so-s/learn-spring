@@ -43,7 +43,7 @@ public class DeveloperRepo {
 
 			@Override
 			public Developer mapRow(ResultSet rs, int rowNum) throws SQLException {
-				return null;
+				Developer d  = new Developer();
 			}
 			
 		};
