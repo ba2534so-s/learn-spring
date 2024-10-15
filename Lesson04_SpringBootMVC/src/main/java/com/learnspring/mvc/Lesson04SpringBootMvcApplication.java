@@ -8,6 +8,7 @@ public class Lesson04SpringBootMvcApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Lesson04SpringBootMvcApplication.class, args);
+		System.out.println("Spring Boot MVC running...");
 	}
 
 }
