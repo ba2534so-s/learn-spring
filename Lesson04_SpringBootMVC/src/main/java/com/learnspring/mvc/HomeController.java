@@ -17,6 +17,7 @@ public class HomeController {
 	public String add(HttpServletRequest req) {
 		
 		int i = Integer.parseInt(req.getParameter("num1"));
+		int j = Integer.parseInt(req.getParameter("num2"));
 		
 		return "result.jsp";
 	}
