@@ -10,9 +10,9 @@
 	Welcome to Spring Boot MVC
 	
 	<form action="add">
-		Enter first number: <input type="text" name="num1">
+		Enter first number: <input type="text" name="num1"><br>
 		Enter second number: <input type="text" name="num2">
-		<input type="submit">
+		<input type="submit" value="Calculate">
 	</form>
 	
 </body>
