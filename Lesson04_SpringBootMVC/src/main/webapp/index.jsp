@@ -8,5 +8,10 @@
 </head>
 <body>
 	Welcome to Spring Boot MVC
+	
+	<form action="add">
+		
+	</form>
+	
 </body>
 </html>
