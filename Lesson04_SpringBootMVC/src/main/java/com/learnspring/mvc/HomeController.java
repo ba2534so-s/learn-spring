@@ -12,7 +12,7 @@ public class HomeController {
 	}
 	
 	public String add() {
-		
+		return "result.jsp";
 	}
 
 }
