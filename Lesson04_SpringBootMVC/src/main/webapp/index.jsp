@@ -11,6 +11,7 @@
 	
 	<form action="add">
 		Enter first number: <input type="text" name="num1">
+		Enter second number: <input type="text" name="num2">
 	</form>
 	
 </body>
