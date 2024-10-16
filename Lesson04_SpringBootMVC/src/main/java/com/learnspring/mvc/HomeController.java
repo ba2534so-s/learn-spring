@@ -15,6 +15,9 @@ public class HomeController {
 	
 	@RequestMapping("/add")
 	public String add(HttpServletRequest req) {
+		
+		int i = Integer.parseInt(req.getParameter("num1"));
+		
 		return "result.jsp";
 	}
 
