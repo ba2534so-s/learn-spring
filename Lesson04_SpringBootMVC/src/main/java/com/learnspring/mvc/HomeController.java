@@ -22,6 +22,7 @@ public class HomeController {
 		int result = i + j;
 		
 		HttpSession session = req.getSession();
+		session.setAttribute("result", result);
 		
 		
 		return "result.jsp";
