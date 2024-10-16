@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 public class HomeController {
 	
 	public void home() {
-		
+		System.out.println("Home page requested");
 	}
 
 }
