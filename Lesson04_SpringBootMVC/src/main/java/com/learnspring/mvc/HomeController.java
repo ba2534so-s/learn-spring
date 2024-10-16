@@ -3,6 +3,8 @@ package com.learnspring.mvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import jakarta.servlet.http.HttpServletRequest;
+
 @Controller
 public class HomeController {
 	
@@ -12,7 +14,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/add")
-	public String add() {
+	public String add(HttpServletRequest req) {
 		return "result.jsp";
 	}
 
