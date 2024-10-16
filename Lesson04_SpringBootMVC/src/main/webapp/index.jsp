@@ -10,7 +10,7 @@
 	Welcome to Spring Boot MVC
 	
 	<form action="add">
-		
+		Enter first number: <input type="text" name="num1">
 	</form>
 	
 </body>
