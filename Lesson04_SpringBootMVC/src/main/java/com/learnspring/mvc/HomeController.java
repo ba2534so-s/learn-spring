@@ -18,6 +18,8 @@ public class HomeController {
 		
 		int i = Integer.parseInt(req.getParameter("num1"));
 		int j = Integer.parseInt(req.getParameter("num2"));
+		int result = i + j;
+		
 		
 		return "result.jsp";
 	}
