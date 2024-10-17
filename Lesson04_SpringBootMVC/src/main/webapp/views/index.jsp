@@ -11,7 +11,7 @@
 	
 	<form action="add">
 		Enter your id: <input type="text" name="devId"><br>
-		Enter your name: <input type="text" name="num2"><br>
+		Enter your name: <input type="text" name="devName"><br>
 		<input type="submit" value="Calculate">
 	</form>
 	
