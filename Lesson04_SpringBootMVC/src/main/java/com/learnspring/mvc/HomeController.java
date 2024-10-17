@@ -38,7 +38,7 @@ public class HomeController {
 		int result = i + j;
 		mv.addObject("result", result);
 		
-		return mv;
+		return "result";
 	}
 	
 }
