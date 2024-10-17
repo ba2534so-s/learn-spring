@@ -22,7 +22,7 @@ public class HomeController {
 		mv.setViewName("result.jsp");
 		
 		int result = i + j;
-		
+		mv.addObject("result", result);
 		
 		return mv;
 	}
