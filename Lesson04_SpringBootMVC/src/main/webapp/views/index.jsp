@@ -10,7 +10,7 @@
 	Welcome to Spring Boot MVC
 	
 	<form action="add">
-		Enter your id: <input type="text" name="num1"><br>
+		Enter your id: <input type="text" name="devId"><br>
 		Enter your name: <input type="text" name="num2"><br>
 		<input type="submit" value="Calculate">
 	</form>
