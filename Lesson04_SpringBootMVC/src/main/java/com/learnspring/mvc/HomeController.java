@@ -16,6 +16,8 @@ public class HomeController {
 		return "index";
 	}
 	
+	
+	/*
 	@RequestMapping("/add")
 	public ModelAndView add(@RequestParam("num1") int i, @RequestParam("num2") int j) {
 		ModelAndView mv = new ModelAndView("result");
@@ -26,5 +28,6 @@ public class HomeController {
 		
 		return mv;
 	}
+	*/
 
 }
