@@ -20,10 +20,11 @@ public class HomeController {
 	public String add(@RequestParam("num1") int i, @RequestParam("num2") int j) {
 		ModelAndView mv = new ModelAndView();
 		
+		
 		int result = i + j;
 		
 		
-		return "result.jsp";
+		return mv;
 	}
 
 }
