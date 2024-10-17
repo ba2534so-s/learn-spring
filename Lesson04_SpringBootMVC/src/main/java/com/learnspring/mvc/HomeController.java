@@ -18,7 +18,7 @@ public class HomeController {
 	
 	@RequestMapping("/add")
 	public ModelAndView add(@RequestParam("num1") int i, @RequestParam("num2") int j) {
-		ModelAndView mv = new ModelAndView();
+		ModelAndView mv = new ModelAndView("result");
 		//mv.setViewName("result");
 		
 		int result = i + j;
