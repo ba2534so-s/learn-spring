@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.learnspring.mvc.model.Developer;
+
 import ch.qos.logback.core.model.Model;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -42,5 +44,8 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/addDeveloper")
+	public String addDeveloper(Developer d, Model m) {
+		
+	}
 	
 }
