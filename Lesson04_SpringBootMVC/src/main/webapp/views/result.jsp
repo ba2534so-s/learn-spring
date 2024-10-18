@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Result is: ${result}
+	Result is: ${dev1}
 
 </body>
 </html>
