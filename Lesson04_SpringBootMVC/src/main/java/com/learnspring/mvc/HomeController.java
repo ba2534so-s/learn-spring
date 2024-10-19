@@ -35,6 +35,7 @@ public class HomeController {
 	}
 	*/
 
+	@ModelAttribute
 	public void modelData(Model m) {
 		
 		m.addAttribute("name", "Developers");
