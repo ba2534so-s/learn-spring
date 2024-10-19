@@ -37,6 +37,8 @@ public class HomeController {
 
 	public void modelData(Model m) {
 		
+		m.addAttribute("name", "Developers");
+		
 	}
 	
 	@RequestMapping("/add")
