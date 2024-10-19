@@ -1,6 +1,7 @@
 package com.learnspring.mvc;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.learnspring.mvc.model.Developer;
 
-import ch.qos.logback.core.model.Model;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
@@ -35,6 +35,13 @@ public class HomeController {
 	}
 	*/
 
+	@ModelAttribute
+	public void modelData(Model m) {
+		
+		m.addAttribute("name", "Developers");
+		
+	}
+	
 	@RequestMapping("/add")
 	public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, ModelMap m) {
 		
