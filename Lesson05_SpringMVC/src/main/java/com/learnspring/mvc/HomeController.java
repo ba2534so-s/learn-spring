@@ -17,5 +17,9 @@ public class HomeController {
 	public String home() {
 		return "index";
 	}
+	
+	public String add(int i, int j, Model m) {
+		
+	}
 
 }
