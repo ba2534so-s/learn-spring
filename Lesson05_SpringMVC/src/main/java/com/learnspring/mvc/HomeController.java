@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
@@ -18,7 +19,8 @@ public class HomeController {
 		return "index";
 	}
 	
-	public String add(int i, int j, Model m) {
+	public String add(@RequestParam("num1") int i, int j, Model m) {
+		
 		
 	}
 
