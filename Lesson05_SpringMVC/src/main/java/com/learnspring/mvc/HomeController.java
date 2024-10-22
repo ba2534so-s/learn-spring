@@ -28,6 +28,7 @@ public class HomeController {
 	}
 	
 	
+	@RequestMapping("addDeveloper")
 	public String addDeveloper(Developer d) {
 		
 	}
