@@ -30,7 +30,7 @@ public class HomeController {
 	
 	
 	@RequestMapping("addDeveloper")
-	public String addDeveloper(Developer d) {
+	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
 		
 	}
 
