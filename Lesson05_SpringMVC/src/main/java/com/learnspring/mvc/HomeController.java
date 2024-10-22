@@ -22,6 +22,7 @@ public class HomeController {
 	public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, Model m) {
 		int result = i + j;
 		m.addAttribute("result", result);
+		return "result";
 	}
 
 }
