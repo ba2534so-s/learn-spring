@@ -14,7 +14,8 @@
 	   <ctx:component-scan base-package="com.learnmvc"></ctx:component-scan>
 	   <ctx:annotation-config></ctx:annotation-config>
 	   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	   		<property name="suffix" value="/views/"></property>
+	   		<property name="prefix" value="/views/"></property>
+	   		<property name="suffix" value=".jsp"></property>
 	   </bean>
 	   
 </beans>
