@@ -11,5 +11,9 @@ public class HomeController {
 	public void modelData(Model m) {
 		m.addAttribute("name", "Developers");
 	}
+	
+	public String home() {
+		
+	}
 
 }
