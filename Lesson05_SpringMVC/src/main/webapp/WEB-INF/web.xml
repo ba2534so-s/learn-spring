@@ -5,7 +5,7 @@
 <web-app>
   
   <servlet>
-  	<servlet-name></servlet-name>
+  	<servlet-name>learnmvc</servlet-name>
   	<servlet-class></servlet-class>
   </servlet>
   
