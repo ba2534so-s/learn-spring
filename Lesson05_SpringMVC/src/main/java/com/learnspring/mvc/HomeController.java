@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.learnspring.mvc.model.Developer;
+
 @Controller
 public class HomeController {
 	
@@ -23,6 +25,11 @@ public class HomeController {
 		int result = i + j;
 		m.addAttribute("result", result);
 		return "result";
+	}
+	
+	
+	public String addDeveloper(Developer d) {
+		
 	}
 
 }
