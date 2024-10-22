@@ -9,4 +9,8 @@
   	<servlet-class></servlet-class>
   </servlet>
   
+  <servlet-mapping>
+  
+  </servlet-mapping>
+  
 </web-app>
