@@ -19,7 +19,7 @@ public class HomeController {
 		return "index";
 	}
 	
-	public String add(@RequestParam("num1") int i, int j, Model m) {
+	public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, Model m) {
 		
 		
 	}
