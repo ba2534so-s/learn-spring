@@ -8,7 +8,7 @@ public class Developer {
 	public Developer(int developerId, String name) {
 		super();
 		this.developerId = developerId;
-		
+		this.name = name;
 	}
 	
 	
