@@ -64,7 +64,7 @@ public class HomeController {
 				new Developer(102, "Bruce Wayne"),
 				new Developer(103, "Peter Parker"));
 		
-		return developers.toString();
+		return "showDevelopers";
 		
 	}
 	
