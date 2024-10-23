@@ -5,6 +5,10 @@ public class Developer {
 	private int developerId;
 	private String name;
 	
+	public Developer(int developerId, String name) {
+		
+	}
+	
 	
 	public int getDeveloperId() {
 		return developerId;
