@@ -6,6 +6,8 @@ public class Developer {
 	private String name;
 	
 	public Developer(int developerId, String name) {
+		super();
+		this.developerId = developerId;
 		
 	}
 	
