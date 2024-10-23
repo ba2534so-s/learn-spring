@@ -58,13 +58,9 @@ public class HomeController {
 	
 	@PostMapping("addDeveloper")
 	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
+
 		
-		List<Developer> developers = Arrays.asList(
-				new Developer(101, "Mary Jane Johnson"), 
-				new Developer(102, "Bruce Wayne"),
-				new Developer(103, "Peter Parker"));
-		
-		return "showDevelopers";
+		return "result";
 		
 	}
 	
