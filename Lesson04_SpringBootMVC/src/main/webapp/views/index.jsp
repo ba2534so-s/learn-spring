@@ -9,10 +9,10 @@
 <body>
 	Welcome to Spring Boot MVC
 	
-	<form action="addDeveloper">
+	<form action="addDeveloper" method="post">
 		Enter your id: <input type="text" name="developerId"><br>
 		Enter your name: <input type="text" name="name"><br>
-		<input type="submit" value="Calculate">
+		<input type="submit" value="Register">
 	</form>
 	
 </body>
