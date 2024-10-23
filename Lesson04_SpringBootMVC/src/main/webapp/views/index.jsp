@@ -12,7 +12,7 @@
 	<form action="addDeveloper">
 		Enter your id: <input type="text" name="developerId"><br>
 		Enter your name: <input type="text" name="name"><br>
-		<input type="submit" value="Calculate">
+		<input type="submit" value="Register">
 	</form>
 	
 </body>
