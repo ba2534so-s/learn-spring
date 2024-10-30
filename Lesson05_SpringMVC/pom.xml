@@ -20,6 +20,11 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>6.1.14</version>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate.orm</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>6.6.1.Final</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>Lesson05_SpringMVC</finalName>
