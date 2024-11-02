@@ -37,6 +37,7 @@ public class HomeController {
 	@GetMapping("getDevelopers")
 	public String getDevelopers(Model m) {
 		m.addAttribute("developers", dao.getDevelopers());
+		return "showDevelopers";
 		
 	}
 	
