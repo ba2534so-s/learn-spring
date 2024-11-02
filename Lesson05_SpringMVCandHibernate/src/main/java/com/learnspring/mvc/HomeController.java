@@ -33,6 +33,9 @@ public class HomeController {
 		return "result";
 	}
 	
+	public String getDevelopers(Model m) {
+		
+	}
 	
 	@RequestMapping("addDeveloper")
 	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
