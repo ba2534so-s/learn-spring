@@ -14,6 +14,7 @@ public class DeveloperDao {
 	public List<Developer> getDevelopers() {
 		
 		Session session = sessionFactory.getCurrentSession();
+		List<Developer> developers = session.createQuery("FROM Developers", Developer.class).list(); 
 		
 	}
 
