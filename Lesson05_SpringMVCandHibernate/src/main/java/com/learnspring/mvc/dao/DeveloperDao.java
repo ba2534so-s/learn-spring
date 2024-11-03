@@ -12,17 +12,17 @@ import com.learnspring.mvc.model.Developer;
 
 @Component
 public class DeveloperDao {
-	
+
 	@Autowired
 	private SessionFactory sessionFactory;
-	
+
 	@Transactional
 	public List<Developer> getDevelopers() {
-		
+
 		Session session = sessionFactory.getCurrentSession();
-		List<Developer> developers = session.createQuery("FROM developers", Developer.class).list(); 
+		List<Developer> developers = session.createQuery("FROM developers", Developer.class).list();
 		return developers;
-		
+
 	}
 
 }

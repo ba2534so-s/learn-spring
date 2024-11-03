@@ -13,39 +13,39 @@ import com.learnspring.mvc.model.Developer;
 
 @Controller
 public class HomeController {
-	
+
 	@Autowired
 	private DeveloperDao dao;
-	
+
 	@ModelAttribute
 	public void modelData(Model m) {
 		m.addAttribute("name", "Developers");
 	}
-	
+
 	@RequestMapping("/")
 	public String home() {
 		return "index";
 	}
-	
+
 	@RequestMapping("add")
 	public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, Model m) {
 		int result = i + j;
 		m.addAttribute("result", result);
 		return "result";
 	}
-	
+
 	@GetMapping("/getDevelopers")
 	public String getDevelopers(Model m) {
 		m.addAttribute("developers", dao.getDevelopers());
 		return "showDevelopers";
-		
+
 	}
-	
+
 	@RequestMapping("addDeveloper")
 	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
-		
+
 		return "result";
-		
+
 	}
 
 }

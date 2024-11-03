@@ -1,11 +1,11 @@
 package com.learnspring.mvc.model;
 
 public class Developer {
-	
+
 	private int developerId;
 	private String name;
-	
-	
+
+
 	public int getDeveloperId() {
 		return developerId;
 	}
@@ -18,7 +18,7 @@ public class Developer {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Developer [developerId=" + developerId + ", name=" + name + "]";
