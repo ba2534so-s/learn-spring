@@ -30,7 +30,7 @@
 	   		<property name="suffix" value=".jsp"></property>
 	   </bean>
 	   
-	   
+	    <!-- Configure DataSource with C3P0 -->
 	   <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 	   		<property name="driverClass" value="org.postgresql.Driver"></property>
 	   		<property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/learn_spring"></property>
