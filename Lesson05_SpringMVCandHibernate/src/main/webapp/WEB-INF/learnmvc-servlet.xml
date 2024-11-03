@@ -15,7 +15,9 @@
            http://www.springframework.org/schema/context 
            https://www.springframework.org/schema/context/spring-context.xsd">
 	   
+	   <!-- Enable component scanning for Spring beans -->
 	   <ctx:component-scan base-package="com.learn"></ctx:component-scan>
+	   
 	   <ctx:annotation-config></ctx:annotation-config>
 	   
 	   <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
