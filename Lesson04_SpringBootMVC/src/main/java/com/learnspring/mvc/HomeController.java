@@ -1,14 +1,9 @@
 package com.learnspring.mvc;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -56,25 +51,12 @@ public class HomeController {
 		return "result";
 	}
 	
-	@PostMapping("addDeveloper")
+	@RequestMapping("/addDeveloper")
 	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
-
+		
 		
 		return "result";
 		
-	}
-	
-	
-	@GetMapping("getDevelopers")
-	public String getDevelopers(Model m) {
-		
-		List<Developer> developers = Arrays.asList(
-				new Developer(101, "Mary Jane Johnson"), 
-				new Developer(102, "Bruce Wayne"),
-				new Developer(103, "Peter Parker"));
-		m.addAttribute("developers", developers);
-		
-		return "showDevelopers";
 	}
 	
 }
