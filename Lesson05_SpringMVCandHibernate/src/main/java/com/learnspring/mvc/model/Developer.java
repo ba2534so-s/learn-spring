@@ -1,5 +1,8 @@
 package com.learnspring.mvc.model;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Developer {
 
 	private int developerId;
