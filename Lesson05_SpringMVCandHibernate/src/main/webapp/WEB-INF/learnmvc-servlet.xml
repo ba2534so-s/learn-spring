@@ -19,7 +19,7 @@
 	<ctx:annotation-config></ctx:annotation-config>
 
 	<!-- Configure DataSource with C3P0 -->
-	<bean id="myDataSource"
+	<bean id="dataSource"
 		class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		destroy-method="close">
 		<property name="driverClass" value="org.postgresql.Driver"></property>
@@ -34,42 +34,21 @@
 
 	</bean>
 
-	<!-- JPA EntityManagerFactory configuration -->
-	<bean id="entityManagerFactory"
-		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-		<property name="dataSource" ref="dataSource" />
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate6.LocalSessionFactoryBean">
+		<property name="dataSource" ref="myDataSource" />
 		<property name="packagesToScan"
 			value="com.learnspring.mvc.model" />
-		<property name="jpaVendorAdapter">
-			<bean
-				class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-				<property name="generateDdl" value="true" />
-				<property name="showSql" value="true" />
-			</bean>
-		</property>
-		<property name="jpaProperties">
+		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
-				<prop key="hibernate.hbm2ddl.auto">update</prop>
-				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.show.sql">true</prop>
 			</props>
 		</property>
 	</bean>
-	
-	<!-- Transaction Manager -->
-    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-        <property name="entityManagerFactory" ref="entityManagerFactory" />
-    </bean>
-    <!-- Enable annotation-driven transaction management -->
-    <tx:annotation-driven transaction-manager="transactionManager" />
 
-	<!-- <bean id="sessionFactory" class="org.springframework.orm.hibernate6.LocalSessionFactoryBean"> 
-		<property name="dataSource" ref="myDataSource"/> <property name="packagesToScan" 
-		value="com.learnspring.mvc.model"/> <property name="hibernateProperties"> 
-		<props> <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop> 
-		<prop key="hibernate.show.sql">true</prop> </props> </property> </bean> -->
-	
-	<!--  	
 
 	<bean id="myTransactionManager"
 		class="org.springframework.orm.hibernate6.HibernateTransactionManager">
@@ -78,8 +57,7 @@
 
 	<tx:annotation-driven
 		transaction-manager="myTransactionManager" />
-		
-		-->
+
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
