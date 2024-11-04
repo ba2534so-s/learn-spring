@@ -55,12 +55,21 @@
 			</props>
 		</property>
 	</bean>
+	
+	<!-- Transaction Manager -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+    <!-- Enable annotation-driven transaction management -->
+    <tx:annotation-driven transaction-manager="transactionManager" />
 
 	<!-- <bean id="sessionFactory" class="org.springframework.orm.hibernate6.LocalSessionFactoryBean"> 
 		<property name="dataSource" ref="myDataSource"/> <property name="packagesToScan" 
 		value="com.learnspring.mvc.model"/> <property name="hibernateProperties"> 
 		<props> <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop> 
 		<prop key="hibernate.show.sql">true</prop> </props> </property> </bean> -->
+	
+	<!--  	
 
 	<bean id="myTransactionManager"
 		class="org.springframework.orm.hibernate6.HibernateTransactionManager">
@@ -69,6 +78,8 @@
 
 	<tx:annotation-driven
 		transaction-manager="myTransactionManager" />
+		
+		-->
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
