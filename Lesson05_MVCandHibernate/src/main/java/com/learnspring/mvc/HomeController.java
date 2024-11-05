@@ -17,4 +17,8 @@ public class HomeController {
 	public String home() {
 		return "index";
 	}
+	
+	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
+		
+	}
 }
