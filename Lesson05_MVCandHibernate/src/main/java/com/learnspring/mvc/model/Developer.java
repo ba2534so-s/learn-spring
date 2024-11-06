@@ -13,6 +13,27 @@ public class Developer {
 		this.developerId = developerId;
 		this.name = name;
 	}
+
+
+	public int getDeveloperId() {
+		return developerId;
+	}
+
+
+	public void setDeveloperId(int developerId) {
+		this.developerId = developerId;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	
 	
 
