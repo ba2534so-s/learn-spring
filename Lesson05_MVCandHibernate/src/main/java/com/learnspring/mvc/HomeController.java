@@ -27,4 +27,8 @@ public class HomeController {
 		return "result";
 		
 	}
+	
+	public String getDevelopers(Model m) {
+		
+	}
 }
