@@ -5,10 +5,10 @@
 <web-app>
 	  
 	<servlet>
-	
+		<servlet-name>learnspringmvc</servlet-name>
 	</servlet>
 	<servlet-mapping>
-	
+		<servlet-name>learnspringmvc</servlet-name>
 	</servlet-mapping>
 
 </web-app>
