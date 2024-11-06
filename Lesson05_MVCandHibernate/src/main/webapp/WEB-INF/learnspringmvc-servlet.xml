@@ -16,7 +16,7 @@
 	<ctx:annotation-config></ctx:annotation-config>
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	
+		<property name="prefix" value="/views/"></property>
 	</bean>
 
 </beans>
