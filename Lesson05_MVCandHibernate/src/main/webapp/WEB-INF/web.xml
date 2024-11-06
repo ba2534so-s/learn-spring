@@ -10,6 +10,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>learnspringmvc</servlet-name>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 </web-app>
