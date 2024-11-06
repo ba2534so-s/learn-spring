@@ -12,6 +12,6 @@
 		 http://www.springframework.org/schema/mvc
 		 https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 		 
-	
+	<ctx:component-scan base-package="com.learnspring"></ctx:component-scan>
 
 </beans>
