@@ -21,7 +21,7 @@ public class HomeController {
 	}
 	
 	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
-		
+		return "result";
 		
 	}
 }
