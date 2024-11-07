@@ -23,5 +23,9 @@ public class DeveloperDao {
 		List<Developer> developers = session.createQuery("from Developer", Developer.class).list();
 		return developers;
 	}
+	
+	public void addDeveloper(Developer d) {
+		
+	}
 
 }
