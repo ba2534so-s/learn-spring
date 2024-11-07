@@ -3,6 +3,7 @@ package com.learnspring.mvc;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,10 +11,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.learnspring.mvc.dao.DeveloperDao;
 import com.learnspring.mvc.model.Developer;
 
 @Controller
 public class HomeController {
+	
+	@Autowired
+	DeveloperDao dao;
 	
 	@ModelAttribute
 	public void modelData(Model m) {
@@ -34,11 +39,7 @@ public class HomeController {
 	
 	@GetMapping("getDevelopers")
 	public String getDevelopers(Model m) {
-		List<Developer> developers = Arrays.asList(
-				new Developer(101, "Mary Jane Johnson"),
-				new Developer(102, "Bruce Wayne"),
-				new Developer(103, "Peter Parker"));
-		m.addAttribute("developers", developers);
+		m.addAttribute("developers", dao.getDevelopers());
 		return "showDevelopers";
 	}
 }
