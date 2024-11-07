@@ -26,6 +26,7 @@
 		
 		<property name="minPoolSize" value="5"></property>
 		<property name="maxPoolSize" value="10"></property>
+		<property name="maxIdleTime" value="30000"></property>
 	</bean>
 	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
