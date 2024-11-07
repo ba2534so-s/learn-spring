@@ -20,7 +20,7 @@ public class DeveloperDao {
 	@Transactional
 	public List<Developer> getDevelopers() {
 		Session session = sessionFactory.getCurrentSession();
-		List<Developer> developers = session.createQuery("from developers", Developer.class).list();
+		List<Developer> developers = session.createQuery("from Developer", Developer.class).list();
 		return developers;
 	}
 
