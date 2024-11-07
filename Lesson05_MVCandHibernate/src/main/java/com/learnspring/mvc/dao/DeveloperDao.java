@@ -9,12 +9,15 @@ import org.springframework.stereotype.Component;
 
 import com.learnspring.mvc.model.Developer;
 
+import jakarta.transaction.Transactional;
+
 @Component
 public class DeveloperDao {
 	
 	@Autowired
 	private SessionFactory sessionFactory; 
 	
+	@Transactional
 	public List<Developer> getDevelopers() {
 		Session session = sessionFactory.getCurrentSession();
 		List<Developer> developers = session.createQuery("from developers", Developer.class).list();
