@@ -24,6 +24,7 @@ public class DeveloperDao {
 		return developers;
 	}
 	
+	@Transactional
 	public void addDeveloper(Developer d) {
 		Session session = sessionFactory.getCurrentSession();
 		session.save(d);
