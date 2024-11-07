@@ -13,6 +13,7 @@ public class DeveloperDao {
 	
 	public List<Developer> getDevelopers() {
 		Session session = sessionFactory.getCurrentSession();
+		List<Developer> developers = session.createQuery("from developers", Developer.class).list();
 	}
 
 }
