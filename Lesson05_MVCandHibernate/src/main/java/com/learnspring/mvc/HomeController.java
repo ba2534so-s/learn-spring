@@ -32,7 +32,7 @@ public class HomeController {
 	
 	
 	@PostMapping("addDeveloper")
-	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
+	public String addDeveloper(@ModelAttribute("developers") Developer d) {
 		return "showDevelopers";
 		
 	}
