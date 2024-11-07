@@ -19,7 +19,7 @@
 	<ctx:annotation-config></ctx:annotation-config>
 	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-	
+		<property name="dataSource" ref="myDataSource"></property>
 	</bean>
 	
 	<bean id="myTransactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
