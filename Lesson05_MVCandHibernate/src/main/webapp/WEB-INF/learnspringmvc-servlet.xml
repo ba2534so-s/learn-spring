@@ -19,7 +19,7 @@
 	<ctx:annotation-config></ctx:annotation-config>
 	
  	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-	
+		<property name="driverClass" value="com.postgresql.Driver"></property>
 	</bean>
 	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
