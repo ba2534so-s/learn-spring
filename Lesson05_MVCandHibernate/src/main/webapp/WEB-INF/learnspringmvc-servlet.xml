@@ -22,6 +22,7 @@
 		<property name="driverClass" value="com.postgresql.Driver"></property>
 		<property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/learn_spring"></property>
 		<property name="user" value="postgres"></property>
+		<property name="password" value="0"></property>
 	</bean>
 	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
