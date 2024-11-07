@@ -10,10 +10,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.learnspring.mvc.dao.DeveloperDao;
 import com.learnspring.mvc.model.Developer;
 
 @Controller
 public class HomeController {
+	
+	DeveloperDao dao;
 	
 	@ModelAttribute
 	public void modelData(Model m) {
