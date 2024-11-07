@@ -26,6 +26,7 @@ public class DeveloperDao {
 	
 	public void addDeveloper(Developer d) {
 		Session session = sessionFactory.getCurrentSession();
+		session.save(d);
 	}
 
 }
