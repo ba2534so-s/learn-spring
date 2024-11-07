@@ -18,6 +18,10 @@
 	<ctx:component-scan base-package="com.learnspring"></ctx:component-scan>
 	<ctx:annotation-config></ctx:annotation-config>
 	
+ 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	
+	</bean>
+	
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource"></property>
 		<property name="packagesToScan" value="com.learnspring.mvc.model"></property>
