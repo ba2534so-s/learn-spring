@@ -33,6 +33,8 @@ public class HomeController {
 	
 	@PostMapping("addDeveloper")
 	public String addDeveloper(@ModelAttribute("developers") Developer d) {
+		
+		dao.addDeveloper(d);
 		return "showDevelopers";
 		
 	}
