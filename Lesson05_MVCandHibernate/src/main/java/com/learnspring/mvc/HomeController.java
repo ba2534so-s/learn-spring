@@ -39,11 +39,7 @@ public class HomeController {
 	
 	@GetMapping("getDevelopers")
 	public String getDevelopers(Model m) {
-		List<Developer> developers = Arrays.asList(
-				new Developer(101, "Mary Jane Johnson"),
-				new Developer(102, "Bruce Wayne"),
-				new Developer(103, "Peter Parker"));
-		m.addAttribute("developers", developers);
+		m.addAttribute("developers", dao.getDevelopers());
 		return "showDevelopers";
 	}
 }
