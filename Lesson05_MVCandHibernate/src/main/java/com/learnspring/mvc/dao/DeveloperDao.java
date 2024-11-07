@@ -4,6 +4,6 @@ import org.hibernate.SessionFactory;
 
 public class DeveloperDao {
 	
-	
+	private SessionFactory sessionFactory; 
 
 }
