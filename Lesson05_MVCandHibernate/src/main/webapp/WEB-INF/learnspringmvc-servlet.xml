@@ -19,7 +19,7 @@
 	<ctx:annotation-config></ctx:annotation-config>
 	
  	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-		<property name="driverClass" value="com.postgresql.Driver"></property>
+		<property name="driverClass" value="org.postgresql.Driver"></property>
 		<property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/learn_spring"></property>
 		<property name="user" value="postgres"></property>
 		<property name="password" value="0"></property>
