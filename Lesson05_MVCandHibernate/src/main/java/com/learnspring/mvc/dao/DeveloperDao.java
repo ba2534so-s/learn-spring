@@ -30,6 +30,7 @@ public class DeveloperDao {
 		session.save(d);
 	}
 	
+	@Transactional
 	public Developer getDeveloper(int developerId) {
 		
 	}
