@@ -29,5 +29,9 @@ public class DeveloperDao {
 		Session session = sessionFactory.getCurrentSession();
 		session.save(d);
 	}
+	
+	public Developer getDeveloper(int developerId) {
+		
+	}
 
 }
