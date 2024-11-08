@@ -16,7 +16,7 @@
 	</form>
 	<hr>
 	<form action="getDeveloper" method="get">
-		Enter id: <input type="text" name="developerId"><br>
+		Enter id: <input type="text" name="devId"><br>
 		<input type="submit" value="Search">
 	</form>
 	
