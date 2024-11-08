@@ -44,4 +44,8 @@ public class HomeController {
 		m.addAttribute("developers", dao.getDevelopers());
 		return "showDevelopers";
 	}
+	
+	public String getDeveloper(Model m) {
+		
+	}
 }
