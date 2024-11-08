@@ -14,6 +14,11 @@
 		Enter your name: <input type="text" name="name"><br>
 		<input type="submit" value="Register">
 	</form>
+	<hr>
+	<form action="getDeveloper" method="get">
+		Enter id: <input type="text" name="developerId"><br>
+		<input type="submit" value="Search">
+	</form>
 	
 </body>
 </html>

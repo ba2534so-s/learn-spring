@@ -23,5 +23,18 @@ public class DeveloperDao {
 		List<Developer> developers = session.createQuery("from Developer", Developer.class).list();
 		return developers;
 	}
+	
+	@Transactional
+	public void addDeveloper(Developer d) {
+		Session session = sessionFactory.getCurrentSession();
+		session.save(d);
+	}
+	
+	@Transactional
+	public Developer getDeveloper(int developerId) {
+		Session session = sessionFactory.getCurrentSession();
+		Developer d = session.get(Developer.class, developerId);
+		return d;
+	}
 
 }

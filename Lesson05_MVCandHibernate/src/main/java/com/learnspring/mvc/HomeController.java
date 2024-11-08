@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.learnspring.mvc.dao.DeveloperDao;
 import com.learnspring.mvc.model.Developer;
@@ -32,8 +33,10 @@ public class HomeController {
 	
 	
 	@PostMapping("addDeveloper")
-	public String addDeveloper(@ModelAttribute("dev1") Developer d) {
-		return "result";
+	public String addDeveloper(@ModelAttribute("developers") Developer d) {
+		
+		dao.addDeveloper(d);
+		return "showDevelopers";
 		
 	}
 	
@@ -41,5 +44,12 @@ public class HomeController {
 	public String getDevelopers(Model m) {
 		m.addAttribute("developers", dao.getDevelopers());
 		return "showDevelopers";
+	}
+	
+	@GetMapping("getDeveloper")
+	public String getDeveloper(@RequestParam("developerId") int developerId, Model m) {
+		m.addAttribute("developers", dao.getDeveloper(developerId));
+		return "showDevelopers";
+		
 	}
 }
