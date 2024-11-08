@@ -45,6 +45,7 @@ public class HomeController {
 		return "showDevelopers";
 	}
 	
+	@GetMapping("getDeveloper")
 	public String getDeveloper(Model m) {
 		
 	}
