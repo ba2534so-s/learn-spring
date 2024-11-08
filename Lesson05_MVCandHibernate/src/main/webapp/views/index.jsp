@@ -14,6 +14,8 @@
 		Enter your name: <input type="text" name="name"><br>
 		<input type="submit" value="Register">
 	</form>
+	<hr>
+	
 	
 </body>
 </html>
