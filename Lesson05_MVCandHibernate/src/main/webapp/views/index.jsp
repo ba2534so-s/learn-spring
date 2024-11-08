@@ -15,7 +15,9 @@
 		<input type="submit" value="Register">
 	</form>
 	<hr>
+	<form action="getDeveloper" method="get">
 	
+	</form>
 	
 </body>
 </html>
