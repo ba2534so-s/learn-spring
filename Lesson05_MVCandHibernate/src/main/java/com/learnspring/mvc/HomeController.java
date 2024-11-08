@@ -47,8 +47,8 @@ public class HomeController {
 	}
 	
 	@GetMapping("getDeveloper")
-	public String getDeveloper(@RequestParam int devId, Model m) {
-		m.addAttribute("developers", dao.getDeveloper());
+	public String getDeveloper(@RequestParam("developerId") int developerId, Model m) {
+		m.addAttribute("developers", dao.getDeveloper(developerId));
 		return "showDevelopers";
 		
 	}
