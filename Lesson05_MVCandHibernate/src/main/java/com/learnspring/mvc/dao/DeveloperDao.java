@@ -33,7 +33,8 @@ public class DeveloperDao {
 	@Transactional
 	public Developer getDeveloper(int developerId) {
 		Session session = sessionFactory.getCurrentSession();
-		session.get(Developer.class, developerId);
+		Developer d = session.get(Developer.class, developerId);
+		return d;
 	}
 
 }
